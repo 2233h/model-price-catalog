@@ -1,0 +1,319 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>模型退役日历 v44</title><style>
+:root{--bg:#fffbeb;--fg:#1c1917;--mut:#78716c;--line:#fde68a;--acc:#d97706;--pk:#dc2626;--panel:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:14px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--fg);padding:0 0 40px}
+header{padding:18px 28px 10px;border-bottom:2px solid var(--line)}
+header h1{font-size:22px;font-weight:700}header h1 sup{font-size:13px;color:var(--mut);font-weight:400}
+header meta{display:block;color:var(--mut);font-size:12px;margin-top:4px}
+nav{padding:8px 28px;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;border-bottom:1px solid var(--line);background:var(--panel)}
+nav a{color:var(--fg);text-decoration:none;font-size:13px;padding:2px 6px;border-radius:4px}
+nav a:hover{background:var(--line)}nav a b{color:var(--acc)}
+section{padding:12px 28px}
+h2{font-size:18px;margin:14px 0 8px}h3{font-size:15px;margin:18px 0 6px}
+.muted{color:var(--mut);font-size:12px}
+.note{color:var(--mut);font-size:12px;margin:0 0 12px;line-height:1.5}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:6px 0 18px}
+th{text-align:left;padding:6px 10px;background:#fef3f2;color:#991b1b;font-weight:600;border-bottom:2px solid #fecaca}
+td{padding:5px 10px;border-bottom:1px solid #fee2e2}
+tr:hover td{background:#fffbeb}
+.retired-past{color:#dc2626}.retired-future{color:#d97706}
+.badge-past{background:#fef2f2;color:#dc2626;padding:1px 6px;border-radius:4px;font-size:11px;font-weight:600}
+.badge-future{background:#fffbeb;color:#d97706;padding:1px 6px;border-radius:4px;font-size:11px;font-weight:600}
+.badge-cat{background:#ecfdf5;color:#059669;padding:1px 6px;border-radius:4px;font-size:11px}
+.badge-cal{background:#f5f3ff;color:#7c3aed;padding:1px 6px;border-radius:4px;font-size:11px}
+.sec-early{margin-top:34px;padding-top:18px;border-top:2px dashed var(--line);font-size:18px;font-weight:700;color:#0369a1}
+.badge-early{background:#e0f2fe;color:#0369a1;padding:1px 6px;border-radius:4px;font-size:11px;font-weight:600}
+#archived .stat .num{color:#0369a1}
+footer{padding:14px 28px 30px;color:var(--mut);font-size:12px;border-top:1px solid var(--line)}
+.stats{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0 16px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 16px;text-align:center;min-width:100px}
+.stat .num{font-size:24px;font-weight:700;color:var(--acc)}.stat .lbl{font-size:11px;color:var(--mut)}
+</style></head><body>
+<header><h1>🗓 模型退役日历 <sup>v44</sup></h1><meta>数据来源：阿里云百炼官网下线公告（人工录入 manual_notices.json）· 生成于 2026-09-24 10:21:03</meta></header>
+<nav><a href="目录.html" style="font-weight:600">← 返回价格目录</a></nav>
+<section>
+<div class="stats"><div class="stat"><div class="num">184</div><div class="lbl">退役模型总数</div></div><div class="stat"><div class="num" style="color:var(--pk)">29</div><div class="lbl">已下线</div></div><div class="stat"><div class="num" style="color:var(--acc)">155</div><div class="lbl">待下线</div></div><div class="stat"><div class="num" style="color:#059669">90</div><div class="lbl">已从目录剔除</div></div><div class="stat"><div class="num" style="color:#7c3aed">94</div><div class="lbl">仅日历记录</div></div></div>
+<p class="note">「已从目录剔除」= 该公告模型此前在价格目录中（含作为合并行的快照/别名被整行移除），现已不再展示；「仅日历记录」= 该公告模型从未进入价格目录（如 qwen2.5 系列、语音老款等），此处保留退役记录供迁移参考。目录侧共 66 行因命中公告被整行剔除。</p>
+<h3 class="retired-past">⚠️ 已下线 · 2026-05-13 <span class="muted">(28 个模型)</span></h3>
+<table><thead><tr><th>模型名称</th><th>状态</th><th>类型</th><th>推荐替换</th><th>来源公告</th></tr></thead><tbody>
+<tr><td><b>qvq-max-2025-03-25</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qvq-max-latest</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen-max-2025-01-25</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen-max-latest</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen-turbo-2024-11-01</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen-turbo-2025-04-28</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen-turbo-latest</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen-vl-max-2025-04-08</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen-vl-max-2025-08-13</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen-vl-max-latest</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen-vl-plus-2025-01-25</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen-vl-plus-2025-05-07</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen-vl-plus-2025-07-10</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen-vl-plus-2025-08-15</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen-vl-plus-latest</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen2.5-14b-instruct</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen2.5-14b-instruct-1m</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen2.5-32b-instruct</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen2.5-72b-instruct</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen2.5-7b-instruct</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen2.5-7b-instruct-1m</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen2.5-vl-32b-instruct</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen2.5-vl-3b-instruct</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen2.5-vl-72b-instruct</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen2.5-vl-7b-instruct</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-0.6b</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-1.7b</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-4b</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>Qwen3.6 系列</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+</tbody></table>
+<h3 class="retired-past">⚠️ 已下线 · 2026-05-30 <span class="muted">(1 个模型)</span></h3>
+<table><thead><tr><th>模型名称</th><th>状态</th><th>类型</th><th>推荐替换</th><th>来源公告</th></tr></thead><tbody>
+<tr><td><b>gte-rerank</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">单模型下线</td><td>qwen3-rerank</td><td class="muted">【Model Studio】GTE-RERANK模型下线通知</td></tr>
+</tbody></table>
+<h3 class="retired-future">⏳ 待下线 · 2026-10-10 <span class="muted">(155 个模型)</span></h3>
+<table><thead><tr><th>模型名称</th><th>状态</th><th>类型</th><th>推荐替换</th><th>来源公告</th></tr></thead><tbody>
+<tr><td><b>MiniMax-M2.1</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>Moonshot-Kimi-K2-Instruct</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>aitryon-parsing-v1</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>aitryon-plus</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>animate-anyone-detect-gen2</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>animate-anyone-gen2</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>wan2.7-r2v</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>animate-anyone-template-gen2</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>wan2.7-r2v</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>codeqwen1.5-7b-chat</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>cosyvoice-clone-v1</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>voice-enrollment</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>cosyvoice-v3</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>cosyvoice-v3.5-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>deepseek-r1</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>deepseek-r1-0528</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>deepseek-r1-distill-qwen-14b</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>deepseek-r1-distill-qwen-32b</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>deepseek-r1-distill-qwen-7b</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>deepseek-v3</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>deepseek-v3.1</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>deepseek-v3.2</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>deepseek-v3.2-exp</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>deepseek-v4-flash</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>deepseek-v4-flash-0731</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>deepseek-v4-flash-us</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>deepseek-v4-flash-0731-us</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>emo-detect-v1</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>emo-v1</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>wan2.7-r2v</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>emoji-detect-v1</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>emoji-v1</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>wan2.7-r2v</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>fun-asr-2025-08-25</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>fun-asr</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>fun-asr-2025-11-07</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>fun-asr</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>fun-asr-mtl</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>fun-asr</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>fun-asr-mtl-2025-08-25</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>fun-asr</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>fun-asr-mtl-realtime</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>fun-asr-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>fun-asr-realtime-2025-09-15</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>fun-asr-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>fun-asr-realtime-2025-11-07</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>fun-asr-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>glm-4.6</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>glm-4.7</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>gummy-realtime-v1</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">主线（语音系列）</td><td>—</td><td class="muted">【ModelStudio】部分语音系列历史主线模型下线通知</td></tr>
+<tr><td><b>kimi-k2-thinking</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>liveportrait</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>wan2.7-r2v</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>liveportrait-detect</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>nlp-rag-rewrite-one</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qvq-max</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">主线</td><td>—</td><td class="muted">【Model Studio】部分历史主线模型下线通知</td></tr>
+<tr><td><b>qwen-flash-2025-07-28-us</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.6-flash-us</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-flash-us</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.6-flash-us</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-image</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-image-edit</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-image-edit-max</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-image-edit-max-2026-01-16</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-image-edit-plus</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-image-edit-plus-2025-10-30</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-image-edit-plus-2025-12-15</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-image-max</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-image-max-2025-12-30</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-image-plus</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-image-plus-2026-01-09</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-image-3.0</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-long-2025-01-25</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-long-latest</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-math-plus</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-math-plus-0816</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-math-plus-0919</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-math-plus-latest</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-mt-lite-us</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.6-flash-us</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-mt-turbo</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen-mt-flash</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-omni-turbo</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-omni-turbo-2025-01-19</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-omni-turbo-2025-03-26</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-omni-turbo-latest</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-omni-turbo-realtime</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-omni-turbo-realtime-2025-05-08</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-omni-turbo-realtime-latest</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-plus-0112</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-plus-1220</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-plus-2025-07-28</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-plus-2025-09-11</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-plus-2025-12-01-us</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus-us</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-plus-us</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus-us</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-tts</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">主线（语音系列）</td><td>cosyvoice-v3-flash</td><td class="muted">【ModelStudio】部分语音系列历史主线模型下线通知</td></tr>
+<tr><td><b>qwen-tts-2025-04-10</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照（语音系列）</td><td>cosyvoice-v3-flash</td><td class="muted">【产品变更】语音系列部分老旧快照模型启动退市通知</td></tr>
+<tr><td><b>qwen-tts-2025-05-22</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照（语音系列）</td><td>cosyvoice-v3-flash</td><td class="muted">【产品变更】语音系列部分老旧快照模型启动退市通知</td></tr>
+<tr><td><b>qwen-tts-latest</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照（语音系列）</td><td>cosyvoice-v3-flash</td><td class="muted">【产品变更】语音系列部分老旧快照模型启动退市通知</td></tr>
+<tr><td><b>qwen-tts-realtime</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">主线（语音系列）</td><td>cosyvoice-v3-flash</td><td class="muted">【ModelStudio】部分语音系列历史主线模型下线通知</td></tr>
+<tr><td><b>qwen-tts-realtime-2025-07-15</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照（语音系列）</td><td>cosyvoice-v3-flash</td><td class="muted">【产品变更】语音系列部分老旧快照模型启动退市通知</td></tr>
+<tr><td><b>qwen-tts-realtime-latest</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">快照（语音系列）</td><td>cosyvoice-v3-flash</td><td class="muted">【产品变更】语音系列部分老旧快照模型启动退市通知</td></tr>
+<tr><td><b>qwen-turbo</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">主线</td><td>—</td><td class="muted">【Model Studio】部分历史主线模型下线通知</td></tr>
+<tr><td><b>qwen-vl-max</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">主线</td><td>—</td><td class="muted">【Model Studio】部分历史主线模型下线通知</td></tr>
+<tr><td><b>qwen-vl-ocr-1028</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-vl-ocr-2025-04-13</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-vl-ocr-latest</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen-vl-plus</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">主线</td><td>—</td><td class="muted">【Model Studio】部分历史主线模型下线通知</td></tr>
+<tr><td><b>qwen-voice-design</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">主线（语音系列）</td><td>cosyvoice-v3.5-flash</td><td class="muted">【ModelStudio】部分语音系列历史主线模型下线通知</td></tr>
+<tr><td><b>qwen2.5-omni-7b</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-14b</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.6-flash</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-235b-a22b</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-235b-a22b-instruct-2507</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-235b-a22b-thinking-2507</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-30b-a3b</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-30b-a3b-instruct-2507</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-30b-a3b-thinking-2507</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-32b</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-8b</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.6-flash</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-asr-flash-2025-09-08</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>fun-asr</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-asr-flash-2026-02-10</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>fun-asr</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-asr-flash-filetrans-2025-11-17</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>fun-asr</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-asr-flash-realtime-2025-10-27</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>fun-asr-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-asr-flash-realtime-2026-02-10</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>fun-asr-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-coder-30b-a3b-instruct</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-coder-480b-a35b-instruct</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-coder-next</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-coder-plus</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">主线</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史主线模型下线通知</td></tr>
+<tr><td><b>qwen3-coder-plus-2025-07-22</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-coder-plus-2025-09-23</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-livetranslate-flash-realtime</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-livetranslate-flash-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-livetranslate-flash-realtime-2025-09-22</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-livetranslate-flash-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-max</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">主线</td><td>qwen3.7-max</td><td class="muted">【Model Studio】部分历史主线模型下线通知</td></tr>
+<tr><td><b>qwen3-max-2025-09-23</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-max</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-max-2026-01-23</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-max</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-max-preview</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">主线</td><td>qwen3.7-max</td><td class="muted">【Model Studio】部分历史主线模型下线通知</td></tr>
+<tr><td><b>qwen3-next-80b-a3b-instruct</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-next-80b-a3b-thinking</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-omni-30b-a3b-captioner</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-omni-flash-2025-09-15</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-omni-flash-2025-12-01</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-omni-flash-realtime</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-omni-flash-realtime-2025-12-01</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-tts-flash-2025-09-18</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>cosyvoice-v3.5-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-tts-flash-2025-11-27</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>cosyvoice-v3.5-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-tts-flash-realtime-2025-09-18</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-tts-flash-realtime-2025-11-27</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-tts-instruct-flash</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>cosyvoice-v3.5-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-tts-instruct-flash-2026-01-26</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>cosyvoice-v3.5-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-tts-instruct-flash-realtime</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-tts-instruct-flash-realtime-2026-01-22</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-tts-vc-2026-01-22</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>cosyvoice-v3.5-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-tts-vc-realtime-2025-11-27</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-tts-vc-realtime-2026-01-15</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-tts-vd-2026-01-26</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>cosyvoice-v3.5-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-tts-vd-realtime-2025-12-16</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-tts-vd-realtime-2026-01-15</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.5-omni-plus-realtime</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-235b-a22b-instruct</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-235b-a22b-thinking</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-30b-a3b-instruct</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-30b-a3b-thinking</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-32b-instruct</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-32b-thinking</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-8b-instruct</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.6-flash</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-8b-thinking</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.6-flash</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-flash</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">主线</td><td>qwen3.6-flash</td><td class="muted">【Model Studio】部分历史主线模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-flash-2025-10-15</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.6-flash</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-flash-2025-10-15-us</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.6-flash-us</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-flash-2026-01-22</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">快照</td><td>qwen3.6-flash</td><td class="muted">【Model Studio】部分历史快照模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-flash-2026-01-22-us</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.6-flash-us</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-flash-us</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.6-flash-us</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-plus-2025-09-23</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3-vl-plus-2025-12-19</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>qwen3.7-plus</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+<tr><td><b>qwen3.6-max-preview</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">主线</td><td>qwen3.7-max</td><td class="muted">【Model Studio】部分历史主线模型下线通知</td></tr>
+<tr><td><b>qwq-plus</b></td><td><span class="badge-cat">✓ 已剔除</span></td><td class="muted">主线</td><td>—</td><td class="muted">【Model Studio】部分历史主线模型下线通知</td></tr>
+<tr><td><b>sensevoice-v1</b></td><td><span class="badge-cal">仅日历</span></td><td class="muted">老旧模型（混合：主线+快照+独立能力款）</td><td>fun-asr</td><td class="muted">【Model Studio】部分老旧模型下线通知</td></tr>
+</tbody></table>
+</section>
+<section id="archived">
+<h2 class="sec-early">📦 早期上架模型 <span class="muted">（2026 年之前上架 · 共 70 款）</span></h2>
+<div class="stats"><div class="stat"><div class="num">70</div><div class="lbl">早期模型总数</div></div><div class="stat"><div class="num">3</div><div class="lbl">涉及年份</div></div><div class="stat"><div class="num">2023</div><div class="lbl">最早年份</div></div><div class="stat"><div class="num">2025</div><div class="lbl">最晚年份</div></div><div class="stat"><div class="num">2026</div><div class="lbl">主栏起始年</div></div></div>
+<p class="note"><b>这些模型并未下架，仍在正常售卖</b>——仅因上架年份早于 2026 年而按口径移出价格目录主栏，价目归档于此。主栏只展示当年上架的模型，历史款在此查阅。<br>注：无上架日期可考的模型（Claude / GPT / Gemini / Seed 等跨云品牌，其源为 AWS/Azure/GCP/BytePlus 报价 API，不提供发布时间）<b>仍留在主栏</b>，不臆造日期归档。</p>
+<h3 class="retired-future">📦 2023 年上架 <span class="muted">(2 个模型)</span></h3>
+<table><thead><tr><th>模型名称</th><th>状态</th><th>上架日期</th><th>板块</th></tr></thead><tbody>
+<tr><td><b>claude〔regional〕</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2023-03-14</td><td class="muted">claude</td></tr>
+<tr><td><b>claude-instant〔regional〕</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2023-08-09</td><td class="muted">claude</td></tr>
+</tbody></table>
+<h3 class="retired-future">📦 2024 年上架 <span class="muted">(7 个模型)</span></h3>
+<table><thead><tr><th>模型名称</th><th>状态</th><th>上架日期</th><th>板块</th></tr></thead><tbody>
+<tr><td><b>claude-3-opus〔regional〕</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2024-03-04</td><td class="muted">claude</td></tr>
+<tr><td><b>claude-3-sonnet〔regional〕</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2024-03-04</td><td class="muted">claude</td></tr>
+<tr><td><b>claude-3-haiku〔regional〕</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2024-03-13</td><td class="muted">claude</td></tr>
+<tr><td><b>claude-3.5-sonnet〔regional〕</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2024-06-21</td><td class="muted">claude</td></tr>
+<tr><td><b>text-embedding-v3</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2024-07-12</td><td class="muted">qwen_embed</td></tr>
+<tr><td><b>claude-3.5-haiku〔regional〕</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2024-10-22</td><td class="muted">claude</td></tr>
+<tr><td><b>claude-3.5-sonnet-v2〔regional〕</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2024-10-22</td><td class="muted">claude</td></tr>
+</tbody></table>
+<h3 class="retired-future">📦 2025 年上架 <span class="muted">(61 个模型)</span></h3>
+<table><thead><tr><th>模型名称</th><th>状态</th><th>上架日期</th><th>板块</th></tr></thead><tbody>
+<tr><td><b>wan2.1-t2v-turbo</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-01-09</td><td class="muted">wan</td></tr>
+<tr><td><b>wan2.1-t2v-plus</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-01-09</td><td class="muted">wan</td></tr>
+<tr><td><b>wan2.1-i2v-plus</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-01-20</td><td class="muted">wan</td></tr>
+<tr><td><b>qwen-plus / -2025-01-25</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-01-30</td><td class="muted">qwen</td></tr>
+<tr><td><b>qwen-max</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-01-30</td><td class="muted">qwen</td></tr>
+<tr><td><b>claude-3.7-sonnet〔regional〕</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-02-24</td><td class="muted">claude</td></tr>
+<tr><td><b>wan2.1-i2v-turbo</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-02-27</td><td class="muted">wan</td></tr>
+<tr><td><b>Gemini 2.5 Pro</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-03-25</td><td class="muted">gemini</td></tr>
+<tr><td><b>wan2.1-kf2v-plus</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-04-07</td><td class="muted">wan</td></tr>
+<tr><td><b>gpt-4.1</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-04-14</td><td class="muted">gpt</td></tr>
+<tr><td><b>gpt-4.1-mini</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-04-14</td><td class="muted">gpt</td></tr>
+<tr><td><b>gpt-4.1-nano</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-04-14</td><td class="muted">gpt</td></tr>
+<tr><td><b>Gemini 2.5 Flash</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-04-17</td><td class="muted">gemini</td></tr>
+<tr><td><b>wan2.1-vace-plus</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-05-14</td><td class="muted">wan</td></tr>
+<tr><td><b>claude-opus-4〔regional〕</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-05-22</td><td class="muted">claude</td></tr>
+<tr><td><b>claude-sonnet-4</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-05-22</td><td class="muted">claude</td></tr>
+<tr><td><b>wan2.1-t2i-turbo</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-05-22</td><td class="muted">wan</td></tr>
+<tr><td><b>wan2.1-t2i-plus</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-05-22</td><td class="muted">wan</td></tr>
+<tr><td><b>Gemini 2.5 Flash Lite</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-06-17</td><td class="muted">gemini</td></tr>
+<tr><td><b>seededit-3-0-i2i-250628</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-06-28</td><td class="muted">qwen_image</td></tr>
+<tr><td><b>seed-1-6-flash-250715</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-07-15</td><td class="muted">seed</td></tr>
+<tr><td><b>qwen-plus-character-ja</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-07-21</td><td class="muted">qwen</td></tr>
+<tr><td><b>qwen-plus / -2025-04-28 / -2025-07-14</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-07-23</td><td class="muted">qwen</td></tr>
+<tr><td><b>qwen-mt-plus</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-07-24</td><td class="muted">qwen</td></tr>
+<tr><td><b>wan2.2-t2i-flash</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-07-28</td><td class="muted">wan</td></tr>
+<tr><td><b>wan2.2-t2i-plus</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-07-28</td><td class="muted">wan</td></tr>
+<tr><td><b>wan2.2-i2v-plus</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-07-28</td><td class="muted">wan</td></tr>
+<tr><td><b>wan2.2-t2v-plus</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-07-28</td><td class="muted">wan</td></tr>
+<tr><td><b>qwen3-coder-flash / -2025-07-28</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-07-29</td><td class="muted">qwen</td></tr>
+<tr><td><b>qwen-plus-latest</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-07-31</td><td class="muted">qwen</td></tr>
+<tr><td><b>qwen-flash / -2025-07-28</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-08-01</td><td class="muted">qwen</td></tr>
+<tr><td><b>claude-opus-4.1〔regional〕</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-08-05</td><td class="muted">claude</td></tr>
+<tr><td><b>wan2.2-i2v-flash</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-08-15</td><td class="muted">wan</td></tr>
+<tr><td><b>text-embedding-v4</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-08-25</td><td class="muted">qwen_embed</td></tr>
+<tr><td><b>seedream-4-0-250828</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-08-28</td><td class="muted">qwen_image</td></tr>
+<tr><td><b>wan2.2-kf2v-flash</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-09-12</td><td class="muted">wan</td></tr>
+<tr><td><b>seed-1-6-250915</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-09-15</td><td class="muted">seed</td></tr>
+<tr><td><b>wan2.5-t2v-preview</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-09-23</td><td class="muted">wan</td></tr>
+<tr><td><b>wan2.5-i2v-preview</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-09-23</td><td class="muted">wan</td></tr>
+<tr><td><b>wan2.5-i2i-preview</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-09-24</td><td class="muted">wan</td></tr>
+<tr><td><b>wan2.5-t2i-preview</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-09-24</td><td class="muted">wan</td></tr>
+<tr><td><b>claude-sonnet-4.5</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-09-29</td><td class="muted">claude</td></tr>
+<tr><td><b>claude-haiku-4.5</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-10-15</td><td class="muted">claude</td></tr>
+<tr><td><b>tongyi-embedding-vision-flash</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-10-31</td><td class="muted">qwen_embed</td></tr>
+<tr><td><b>tongyi-embedding-vision-plus</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-10-31</td><td class="muted">qwen_embed</td></tr>
+<tr><td><b>wan2.2-animate-mix</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-11-10</td><td class="muted">wan</td></tr>
+<tr><td><b>wan2.2-animate-move</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-11-10</td><td class="muted">wan</td></tr>
+<tr><td><b>qwen-mt-flash</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-11-11</td><td class="muted">qwen</td></tr>
+<tr><td><b>qwen-mt-lite</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-11-19</td><td class="muted">qwen</td></tr>
+<tr><td><b>gemini-3-pro-image</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-11-20</td><td class="muted">qwen_image</td></tr>
+<tr><td><b>qwen-vl-ocr / -2025-11-20</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-11-21</td><td class="muted">qwen_family</td></tr>
+<tr><td><b>claude-opus-4.5</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-11-24</td><td class="muted">claude</td></tr>
+<tr><td><b>qwen-voice-enrollment</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-11-27</td><td class="muted">speech</td></tr>
+<tr><td><b>seedream-4-5-251128</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-11-28</td><td class="muted">qwen_image</td></tr>
+<tr><td><b>gpt-5.2</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-12-11</td><td class="muted">gpt</td></tr>
+<tr><td><b>gpt-5.2-chat</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-12-11</td><td class="muted">gpt</td></tr>
+<tr><td><b>wan2.6-t2i</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-12-15</td><td class="muted">wan</td></tr>
+<tr><td><b>wan2.6-image</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-12-15</td><td class="muted">qwen_image</td></tr>
+<tr><td><b>wan2.6-r2v</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-12-16</td><td class="muted">wan</td></tr>
+<tr><td><b>Gemini 3 Flash Preview</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-12-17</td><td class="muted">gemini</td></tr>
+<tr><td><b>seed-1-8-251228</b></td><td><span class="badge-early">📦 早期款</span></td><td class="muted">2025-12-28</td><td class="muted">seed</td></tr>
+</tbody></table>
+</section>
+<footer>本页面由 build.py 自动生成：退役日历数据源为 data/sources/manual_notices.json（人工录入，日更链不碰）；早期上架模型分区由 build.py 的 apply_archive() 按 catalog 的 published 年份自动归档（口径：主栏仅展示当年上架）。新增公告只需往该 JSON 的 notices[] 追加一条，下次 build 自动更新。</footer>
+</body></html>
