@@ -67,7 +67,7 @@ td.fold .fold-it b{color:var(--mut);font-weight:600;font-size:11px}
 .sku-src{margin-left:6px;font-size:10px;color:var(--mut);border:1px solid var(--line);border-radius:8px;padding:0 5px;background:var(--panel);cursor:help}
 footer{padding:14px 28px 30px;color:var(--mut);font-size:12px;border-top:1px solid var(--line)}
 </style></head><body>
-<header><h1>模型价格目录大全 <sup>v67</sup></h1><meta>口径 USD/百万token · 图像$/张 · 视频$/秒 · 生成于 2026-10-29 17:21:17｜<a href="https://github.com" onclick="return false" style="color:var(--mut)">Batch/免费额度已移除</a></meta><div class="fresh">源新鲜度：<b>bailian_intl_api</b> 2026-10-29 10:20 ｜ <b>byteplus</b> 2026-10-29 16:55 ｜ <b>aws_bedrock</b> offer 2026101208 ｜ <b>azure</b> 2026-10-29 10:21 ｜ <b>vertex(GCP)</b> 2026-10-29 10:21 ｜ <b>bailian_cn(国内站)</b> 2026-10-29 17:21 ｜ <b>model_pages(详情页池)</b> 2026-10-23 10:20</div><div class="fresh">详情页池（🔄SKU 数据源）：128 页 · 失效 21 · 待回灌 3 · 最老 43 天 ｜ 89 页解析 · 多档页档位级挂载 16</div></header>
+<header><h1>模型价格目录大全 <sup>v67</sup></h1><meta>口径 USD/百万token · 图像$/张 · 视频$/秒 · 生成于 2026-10-29 17:31:59｜<a href="https://github.com" onclick="return false" style="color:var(--mut)">Batch/免费额度已移除</a></meta><div class="fresh">源新鲜度：<b>bailian_intl_api</b> 2026-10-29 10:20 ｜ <b>byteplus</b> 2026-10-29 16:55 ｜ <b>aws_bedrock</b> offer 2026101208 ｜ <b>azure</b> 2026-10-29 10:21 ｜ <b>vertex(GCP)</b> 2026-10-29 10:21 ｜ <b>bailian_cn(国内站)</b> 2026-10-29 17:21 ｜ <b>model_pages(详情页池)</b> 2026-10-23 10:20</div><div class="fresh">详情页池（🔄SKU 数据源）：128 页 · 失效 21 · 待回灌 3 · 最老 43 天 ｜ 89 页解析 · 多档页档位级挂载 16</div></header>
 <span class="qwrap"><input id="q" placeholder="搜索模型…（模糊匹配：qwen3.8max / opus55 / image3.0）" autocomplete="off"><button id="qclr" title="清空" type="button">×</button><span id="qhit" class="qhit"></span></span><label class="tog"><input type="checkbox" id="eoltog"> 含老款(EOL)</label>
 <a href="退役日历.html" style="color:var(--pk)">🗓 退役日历 <b>184</b></a>
 <a href="#qwen">Qwen/通义（文本类） <b>21</b></a>
@@ -88,6 +88,7 @@ footer{padding:14px 28px 30px;color:var(--mut);font-size:12px;border-top:1px sol
 <a href="#video_happyhorse">视频生成 · HappyHorse <b>7</b></a>
 <a href="#video_vidu">视频生成 · Vidu <b>4</b></a>
 <a href="#video_seedance">视频生成 · 即梦 Seedance <b>4</b></a>
+<a href="#video_pixverse">视频生成 · PixVerse <b>4</b></a>
 <a href="#speech_asr">语音识别 · 按 token <b>4</b></a>
 <a href="#speech_asr_dur">语音识别 · 按时长 <b>4</b></a>
 <a href="#speech_rt">实时语音对话（音频/文本 入出分列） <b>4</b></a>
@@ -401,6 +402,18 @@ footer{padding:14px 28px 30px;color:var(--mut);font-size:12px;border-top:1px sol
 <tr class="detail"><td colspan="4"><div class="lbl">其余档位明细（档位 × 收费项；主栏档以 ≙主栏 标注，此处不重复其数值）</div><table><tr><th rowspan="1">档位</th><th colspan="1" class="grp">收费项</th></tr><tr><th class="sub"></th><th>视频·按秒</th></tr><tr><td>480p/720p <span class="muted">（主栏）</span></td><td class="muted">≙主栏</td></tr><tr><td>4K</td><td class="num">$2.4/秒</td></tr><tr><td>1080p</td><td class="num">$4.7/秒</td></tr></table></td></tr>
 <tr data-model="dreamina-seedance-2-0-fast-260128"><td class="mname"><span class="mtext" title="dreamina-seedance-2-0-fast-260128">dreamina-seedance-2-0-fast-260128</span><span class="sku-src" title="价格取自BytePlus 官网价目页，本机每日 10:20 自动刷新；最近一次拉取 2026-10-29 16:55（该渠道无详情页，不支持单独定向询价）">🔄16:55</span></td><td class="muted">2026-01-28</td><td class="num">$3.3/秒</td></tr>
 <tr class="detail"><td colspan="4"></td></tr>
+</tbody></table></section>
+<section id="video_pixverse"><h2>视频生成 · PixVerse <span class="muted">(百炼国际站API)</span></h2>
+<p class="note">PixVerse v6 系列（文生视频 / 参考生视频 / 关键帧 / 图生视频），按计费项分列。</p>
+<table class="fixed"><colgroup><col class="c-model"><col class="c-pub"><col><col><col><col><col><col><col><col></colgroup><thead><tr><th>模型</th><th>发布日</th><th>720P</th><th>1080P</th><th>720P·无声</th><th>1080P·无声</th><th>360P·无声</th><th>540P·无声</th><th>360P</th><th>540P</th></tr></thead><tbody>
+<tr data-model="pixverse/pixverse-v6-t2v"><td class="mname"><span class="mtext" title="pixverse/pixverse-v6-t2v">pixverse/pixverse-v6-t2v</span><span class="sku-src" title="价格取自百炼国际站API，本机每日 10:20 自动刷新；最近一次拉取 2026-10-29 10:20（该渠道无详情页，不支持单独定向询价）">🔄10:20</span></td><td class="muted">2026-06-02</td><td class="num">$0.054/秒</td><td class="num">$0.103/秒</td><td class="num">$0.04/秒</td><td class="num">$0.08/秒</td><td class="num">$0.023/秒</td><td class="num">$0.032/秒</td><td class="num">$0.032/秒</td><td class="num">$0.04/秒</td></tr>
+<tr class="detail"><td colspan="11"></td></tr>
+<tr data-model="pixverse/pixverse-v6-r2v"><td class="mname"><span class="mtext" title="pixverse/pixverse-v6-r2v">pixverse/pixverse-v6-r2v</span><span class="sku-src" title="价格取自百炼国际站API，本机每日 10:20 自动刷新；最近一次拉取 2026-10-29 10:20（该渠道无详情页，不支持单独定向询价）">🔄10:20</span></td><td class="muted">2026-06-02</td><td class="num">$0.054/秒</td><td class="num">$0.103/秒</td><td class="num">$0.04/秒</td><td class="num">$0.08/秒</td><td class="num">$0.023/秒</td><td class="num">$0.032/秒</td><td class="num">$0.032/秒</td><td class="num">$0.04/秒</td></tr>
+<tr class="detail"><td colspan="11"></td></tr>
+<tr data-model="pixverse/pixverse-v6-kf2v"><td class="mname"><span class="mtext" title="pixverse/pixverse-v6-kf2v">pixverse/pixverse-v6-kf2v</span><span class="sku-src" title="价格取自百炼国际站API，本机每日 10:20 自动刷新；最近一次拉取 2026-10-29 10:20（该渠道无详情页，不支持单独定向询价）">🔄10:20</span></td><td class="muted">2026-06-02</td><td class="num">$0.054/秒</td><td class="num">$0.103/秒</td><td class="num">$0.04/秒</td><td class="num">$0.08/秒</td><td class="num">$0.023/秒</td><td class="num">$0.032/秒</td><td class="num">$0.032/秒</td><td class="num">$0.04/秒</td></tr>
+<tr class="detail"><td colspan="11"></td></tr>
+<tr data-model="pixverse/pixverse-v6-it2v"><td class="mname"><span class="mtext" title="pixverse/pixverse-v6-it2v">pixverse/pixverse-v6-it2v</span><span class="sku-src" title="价格取自百炼国际站API，本机每日 10:20 自动刷新；最近一次拉取 2026-10-29 10:20（该渠道无详情页，不支持单独定向询价）">🔄10:20</span></td><td class="muted">2026-06-02</td><td class="num">$0.054/秒</td><td class="num">$0.103/秒</td><td class="num">$0.04/秒</td><td class="num">$0.08/秒</td><td class="num">$0.023/秒</td><td class="num">$0.032/秒</td><td class="num">$0.032/秒</td><td class="num">$0.04/秒</td></tr>
+<tr class="detail"><td colspan="11"></td></tr>
 </tbody></table></section>
 <section id="speech_asr"><h2>语音识别 · 按 token <span class="muted">(百炼国际站官方API)</span></h2>
 <p class="note">按**输入/输出 token** 计费（音频转文字）；3.1 系走的这套。</p>
